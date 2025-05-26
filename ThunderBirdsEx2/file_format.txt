@@ -1,0 +1,16 @@
+tbXX.steps:
+
+Each line in the steps file contains to parameters, the first one is seconds and the second
+one is the key keypressed by the user. Basically, we are saving the moment if time and the
+corresponding decision tied with it. This way we can replay the game in load mode.
+
+tbXX.result:
+In this file we are saving events:
+1)The player has passed a level - represented in the file as "WIN"
+2)The player failed a level - represented in the file as "LOSE"
+Each event comes after the second it  happened followed by as white space.
+For example, a file can look like this:
+313 LOSE 250 WIN
+which means we failed at the 313 second and then won at the 250 second
+Note: WIN and LOSE can match diffrent events! For example, lose can mean time is over 
+or it an mean losing a life by getting the small ship crashed. 
